@@ -1,0 +1,16 @@
+.text-component {
+    &.title-text {
+        font-size: 1.25rem;
+        color: #000;
+    }
+
+    &.default-text {
+        font-size: 0.75rem;
+        color: #000;
+    }
+
+    &.subtitle-text {
+        font-size: 0.75rem;
+        color: #777;
+    }
+}

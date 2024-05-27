@@ -1,0 +1,38 @@
+.card-component.structured-card-component {
+    display: flex;
+    flex-direction: column;
+    min-width: 500px;
+    padding: 0;
+
+    & .structured-card-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 24px 24px 0 24px;
+
+        & .structured-card-header-left {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 16px;
+        }
+    }
+
+    & .structured-card-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-bottom: 16px;
+    }
+
+    & .structured-card-footer {
+        border-top: 1px solid var(--border-color);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 16px;
+    }
+}

@@ -1,0 +1,46 @@
+.button-component {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+
+    &.primary-button {
+        background-image: linear-gradient(#3f3f3f, #1d1d1d);
+        color: #fff;
+        padding: 8px 16px;
+        border-radius: 6px;
+
+        &:active {
+            background-image: linear-gradient(#1d1d1d, #3f3f3f);
+        }
+
+        & .button-icon {
+            font-size: 1rem;
+        }
+    }
+
+    &.inline-button {
+        background-color: transparent;
+        color: #373737;
+        border: none;
+
+        & .button-icon {
+            font-size: 2rem;
+        }
+
+        &:active {
+            opacity: 0.5;
+        }
+    }
+
+    & .button-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
