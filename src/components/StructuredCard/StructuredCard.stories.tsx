@@ -24,7 +24,7 @@ export const Default = {
                 <Text variant="title" style={{ marginBottom: 16 }}>
                     Structured Card Body
                 </Text>
-                <Text>This is a StructuredCard component.</Text>
+                <Text variant="subtitle">This is a StructuredCard component.</Text>
             </>
         ),
         footer: <Text>This is extra footer text</Text>,

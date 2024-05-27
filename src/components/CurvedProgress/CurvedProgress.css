@@ -1,0 +1,34 @@
+.curved-progress-component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    width: 360px;
+    height: 180px;
+
+    overflow: hidden;
+
+    &:after {
+        box-sizing: border-box;
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+
+        width: 360px;
+        height: 360px;
+
+        border: 50px solid;
+        border-color: #eee #eee var(--primary-color) var(--primary-color);
+        border-radius: 50%;
+
+        transform: rotate(var(--progress-rotation));
+    }
+
+    & .progress-text {
+        margin-top: 75px;
+    }
+}
