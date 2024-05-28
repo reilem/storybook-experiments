@@ -1,7 +1,0 @@
-<svg width="150" height="80" xmlns="http://www.w3.org/2000/svg">
-    <path d="M 10 70
-        A 65 65 0 1 1 140 70
-        " stroke="grey" stroke-width="3" stroke-linecap="round" />
-    <g id="svg-graph-meter-value">
-    </g>
-</svg>
