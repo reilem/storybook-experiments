@@ -3,9 +3,22 @@
 }
 
 :root {
-    --border-color: #eaeaea;
     --primary-color: #625bf6;
+    --border-color: #eaeaea;
+    --background-color: #fff;
 
     --text-color: #000;
     --subtle-text-color: #777;
+    --text-color-light: #fff;
+
+    --neutral-button-color1: #3f3f3f;
+    --neutral-button-color2: #1d1d1d;
+
+    --success-button-color1: #3f7f3f;
+    --success-button-color2: #1d3a1d;
+
+    --danger-button-color1: #7f3f3f;
+    --danger-button-color2: #3a1d1d;
+
+    --shadow-color: #ddd;
 }

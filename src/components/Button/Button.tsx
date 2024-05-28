@@ -1,31 +1,35 @@
-import React, { JSX } from 'react';
+import React from 'react';
 import cn from 'classnames';
 
 import './Button.css';
 
 type OwnProps = {
-    icon?: JSX.Element;
-    title?: string;
-    variant?: 'primary' | 'inline';
+    variant?: 'neutral' | 'success' | 'danger' | 'inline';
 };
 
-type Props = OwnProps & React.ButtonHTMLAttributes<HTMLButtonElement>;
+export type Props = OwnProps & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
-/**
- * Primary UI component for user interaction
- */
-export const Button = ({ icon, title, className, variant = 'primary', ...other }: Props) => {
+const BORDERED_VARIANTS = ['neutral', 'success', 'danger'];
+
+export const Button = ({
+    variant = 'neutral',
+    children,
+    className,
+    ...other
+}: React.PropsWithChildren<Props>) => {
     return (
         <button
             type="button"
             className={cn('button-component', className, {
-                'primary-button': variant === 'primary',
+                'bordered-button': BORDERED_VARIANTS.includes(variant),
+                'neutral-button': variant === 'neutral',
+                'success-button': variant === 'success',
+                'danger-button': variant === 'danger',
                 'inline-button': variant === 'inline',
             })}
             {...other}
         >
-            <div className="button-icon">{icon}</div>
-            {title}
+            {children}
         </button>
     );
 };

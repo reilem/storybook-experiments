@@ -4,28 +4,64 @@
     align-items: center;
     gap: 8px;
 
-    &.primary-button {
-        background-image: linear-gradient(#3f3f3f, #1d1d1d);
-        color: #fff;
+    &.bordered-button {
         padding: 8px 16px;
         border-radius: 6px;
 
-        &:active {
-            background-image: linear-gradient(#1d1d1d, #3f3f3f);
-        }
-
-        & .button-icon {
+        & svg {
             font-size: 1rem;
+        }
+    }
+
+    &.neutral-button {
+        background-image: linear-gradient(
+            var(--neutral-button-color1),
+            var(--neutral-button-color2)
+        );
+        color: var(--text-color-light);
+
+        &:active {
+            background-image: linear-gradient(
+                var(--neutral-button-color2),
+                var(--neutral-button-color1)
+            );
+        }
+    }
+
+    &.success-button {
+        background-image: linear-gradient(
+            var(--success-button-color1),
+            var(--success-button-color2)
+        );
+        color: var(--text-color-light);
+
+        &:active {
+            background-image: linear-gradient(
+                var(--success-button-color2),
+                var(--success-button-color1)
+            );
+        }
+    }
+
+    &.danger-button {
+        background-image: linear-gradient(var(--danger-button-color1), var(--danger-button-color2));
+        color: var(--text-color-light);
+
+        &:active {
+            background-image: linear-gradient(
+                var(--danger-button-color2),
+                var(--danger-button-color1)
+            );
         }
     }
 
     &.inline-button {
         background-color: transparent;
-        color: #373737;
+        color: var(--text-color);
         border: none;
 
-        & .button-icon {
-            font-size: 2rem;
+        & svg {
+            font-size: 1.5rem;
         }
 
         &:active {

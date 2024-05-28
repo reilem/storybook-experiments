@@ -24,7 +24,8 @@
         height: var(--width);
 
         border: calc(var(--width) * 1 / 9) solid;
-        border-color: #eee #eee var(--primary-color) var(--primary-color);
+        border-color: var(--border-color) var(--border-color) var(--primary-color)
+            var(--primary-color);
         border-radius: 50%;
 
         transform: rotate(var(--progress-rotation));

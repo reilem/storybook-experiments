@@ -1,6 +1,6 @@
 import React from 'react';
 import { fn } from '@storybook/test';
-import { PiAirplaneTakeoff } from 'react-icons/pi';
+import { PiChalkboardTeacherFill } from 'react-icons/pi';
 
 import { Button } from './Button';
 
@@ -10,12 +10,16 @@ export default {
     parameters: { layout: 'centered' },
     tags: ['autodocs'],
     args: { onClick: fn() },
-    argTypes: { icon: { control: { type: null } } },
+    argTypes: { children: { control: { type: null } } },
 };
 
 export const Default = {
     args: {
-        icon: <PiAirplaneTakeoff />,
-        title: 'Button',
+        children: (
+            <>
+                <PiChalkboardTeacherFill />
+                Button Example
+            </>
+        ),
     },
 };

@@ -45,7 +45,9 @@ export const SpeedometerPanel = ({
                     {headerTitle && <Text variant="title">{headerTitle}</Text>}
                 </div>
                 {onClickMore && (
-                    <Button variant="inline" icon={<PiDotsThreeBold />} onClick={onClickMore} />
+                    <Button variant="inline" onClick={onClickMore}>
+                        <PiDotsThreeBold />
+                    </Button>
                 )}
             </div>
             <div className="speedometer-panel-body">
@@ -57,7 +59,10 @@ export const SpeedometerPanel = ({
             </div>
             <div className="speedometer-panel-footer">
                 {actionOnClick && (
-                    <Button icon={actionIcon} title={actionLabel} onClick={actionOnClick} />
+                    <Button onClick={actionOnClick}>
+                        {actionIcon}
+                        {actionLabel}
+                    </Button>
                 )}
             </div>
         </Panel>
