@@ -1,12 +1,14 @@
 .curved-progress-component {
+    --width: 240px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
     position: relative;
-    width: 360px;
-    height: 180px;
+    width: var(--width);
+    height: calc(var(--width) / 2);
 
     overflow: hidden;
 
@@ -18,10 +20,10 @@
         top: 0;
         right: 0;
 
-        width: 360px;
-        height: 360px;
+        width: var(--width);
+        height: var(--width);
 
-        border: 50px solid;
+        border: calc(var(--width) * 1 / 9) solid;
         border-color: #eee #eee var(--primary-color) var(--primary-color);
         border-radius: 50%;
 
@@ -29,6 +31,7 @@
     }
 
     & .progress-text {
-        margin-top: 75px;
+        margin-top: calc(var(--width) * 0.2);
+        font-size: calc(var(--width) * 0.1);
     }
 }
