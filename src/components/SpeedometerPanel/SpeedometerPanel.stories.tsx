@@ -6,7 +6,7 @@ import { fn } from '@storybook/test';
 import { SpeedometerPanel } from './SpeedometerPanel';
 
 export default {
-    title: 'Components/SpeedometerPanel',
+    title: 'Components/Panel/SpeedometerPanel',
     component: SpeedometerPanel,
     parameters: {
         layout: 'centered',

@@ -5,7 +5,7 @@ import { PiChargingStation } from "react-icons/pi";
 import { PanelHeader } from './PanelHeader';
 
 export default {
-    title: 'Components/PanelHeader',
+    title: 'Components/Panel/PanelHeader',
     component: PanelHeader,
     parameters: {
         layout: 'centered',

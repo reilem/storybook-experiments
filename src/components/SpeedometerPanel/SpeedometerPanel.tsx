@@ -2,12 +2,13 @@ import React, { JSX } from 'react';
 import cn from 'classnames';
 
 import { Panel } from '../Panel/Panel';
+import { PanelFooter } from '../PanelFooter/PanelFooter';
 import { PanelHeader } from '../PanelHeader/PanelHeader';
 import { Text } from '../Text/Text';
 import { Button } from '../Button/Button';
+import { CurvedProgress } from '../CurvedProgress/CurvedProgress';
 
 import './SpeedometerPanel.css';
-import { CurvedProgress } from '../CurvedProgress/CurvedProgress';
 
 type OwnProps = {
     headerIcon?: JSX.Element;
@@ -46,14 +47,14 @@ export const SpeedometerPanel = ({
                     <Text variant="subtitle">{bodyDescription}</Text>
                 </div>
             </div>
-            <div className="speedometer-panel-footer">
+            <PanelFooter>
                 {actionOnClick && (
                     <Button onClick={actionOnClick}>
                         {actionIcon}
                         {actionLabel}
                     </Button>
                 )}
-            </div>
+            </PanelFooter>
         </Panel>
     );
 };

@@ -2,7 +2,7 @@ import React from 'react';
 import { Panel } from './Panel';
 
 export default {
-    title: 'Components/Panel',
+    title: 'Components/Panel/Panel',
     component: Panel,
     parameters: {
         layout: 'centered',
