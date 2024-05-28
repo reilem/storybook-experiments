@@ -1,17 +1,17 @@
-.card-component.limit-card-component {
+.panel-component.speedometer-panel-component {
     display: flex;
     flex-direction: column;
     min-width: 300px;
     padding: 0;
 
-    & .limit-card-header {
+    & .speedometer-panel-header {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
         padding: 24px 24px 0 24px;
 
-        & .limit-card-header-left {
+        & .speedometer-panel-header-left {
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -19,7 +19,7 @@
         }
     }
 
-    & .limit-card-body {
+    & .speedometer-panel-body {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -41,7 +41,7 @@
         }
     }
 
-    & .limit-card-footer {
+    & .speedometer-panel-footer {
         border-top: 1px solid var(--border-color);
         display: flex;
         flex-direction: row;

@@ -1,4 +1,4 @@
-.card-component {
+.panel-component {
     display: flex;
     flex-direction: column;
     min-width: 100px;
