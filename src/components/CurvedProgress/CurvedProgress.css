@@ -1,4 +1,5 @@
 .curved-progress-component {
+    /* All size values are computed based on this width value */
     --width: 360px;
 
     display: flex;
@@ -12,6 +13,7 @@
 
     overflow: hidden;
 
+    /* Create a circle double the height of the parent component, clipped using overflow:hidden to form a semi-circle*/
     &:after {
         box-sizing: border-box;
         content: '';
@@ -24,10 +26,12 @@
         height: var(--width);
 
         border: calc(var(--width) * 1 / 9) solid;
+        /* Circle has two different colors in each half */
         border-color: var(--border-color) var(--border-color) var(--primary-color)
             var(--primary-color);
         border-radius: 50%;
 
+        /* Semi-circle rotation forwards the progress bar */
         transform: rotate(var(--progress-rotation));
     }
 

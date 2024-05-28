@@ -11,18 +11,16 @@ type OwnProps = {
 
 type Props = React.HtmlHTMLAttributes<HTMLDivElement> & OwnProps;
 
-/**
- * Primary UI component for user interaction
- */
 export const CurvedProgress = ({ value = 0, className, ...other }: Props) => {
-    // 0 -> -45
-    // 100 -> 135
+    // Value: 0 -> Rotation: -45deg
+    // Value: 100 -> Rotation: 135
     const progressRotation = `${value * 180 - 45}deg`;
     const progressStr = `${(value * 100).toFixed(0)}%`;
 
     return (
         <div
             className={cn('curved-progress-component', className)}
+            // Pass custom CSS variable through style to trigger rotation in CSS
             style={{ '--progress-rotation': progressRotation } as React.CSSProperties}
             {...other}
         >

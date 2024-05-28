@@ -12,7 +12,7 @@ import './SpeedometerPanel.css';
 
 type OwnProps = {
     headerIcon?: JSX.Element;
-    headerTitle?: string;
+    headerTitle: string;
     onClickMore?: () => void;
     progressValue: number;
     bodyMessage: string;

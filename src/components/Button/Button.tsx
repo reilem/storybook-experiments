@@ -9,6 +9,7 @@ type OwnProps = {
 
 export type Props = OwnProps & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
+// Which variants use a border around the button
 const BORDERED_VARIANTS = ['neutral', 'success', 'danger'];
 
 export const Button = ({

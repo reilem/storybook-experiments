@@ -9,8 +9,8 @@ import { Text } from '../Text/Text';
 import './PanelHeader.css';
 
 type OwnProps = {
+    title: string;
     icon?: JSX.Element;
-    title?: string;
     onClickMore?: () => void;
 };
 
@@ -21,8 +21,9 @@ export const PanelHeader = ({ icon, title, onClickMore, className, ...other }: R
         <div className={cn('panel-header-component', className)} {...other}>
             <div className="panel-header-left">
                 {icon && <FloatingIcon icon={icon} />}
-                {title && <Text variant="title">{title}</Text>}
+                <Text variant="title">{title}</Text>
             </div>
+
             {onClickMore && (
                 <Button variant="inline" onClick={onClickMore}>
                     <PiDotsThreeBold />
