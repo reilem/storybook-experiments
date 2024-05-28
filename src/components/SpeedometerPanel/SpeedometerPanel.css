@@ -27,6 +27,10 @@
 
         padding: 32px 16px;
 
+        & .curved-progress-component {
+            --width: 240px;
+        }
+
         & .text-container {
             display: flex;
             flex-direction: column;

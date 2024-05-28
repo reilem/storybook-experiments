@@ -26,9 +26,7 @@ export const CurvedProgress = ({ value = 0, className, ...other }: Props) => {
             style={{ '--progress-rotation': progressRotation } as React.CSSProperties}
             {...other}
         >
-            <Text variant="big" className="progress-text">
-                {progressStr}
-            </Text>
+            <Text className="progress-text">{progressStr}</Text>
         </div>
     );
 };

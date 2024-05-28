@@ -10,6 +10,7 @@ export default {
         layout: 'centered',
     },
     tags: ['autodocs'],
+    argTypes: { icon: { control: { type: null } } },
 };
 
 export const Default = {

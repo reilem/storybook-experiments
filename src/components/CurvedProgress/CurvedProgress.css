@@ -1,5 +1,5 @@
 .curved-progress-component {
-    --width: 240px;
+    --width: 360px;
 
     display: flex;
     flex-direction: column;
