@@ -52,7 +52,7 @@ export const LimitCard = ({
                 <CurvedProgress value={limitProgress} />
                 <div className="text-container">
                     <Text variant="title">{limitTitle}</Text>
-                    <Text variant="default">{limitDescription}</Text>
+                    <Text variant="subtitle">{limitDescription}</Text>
                 </div>
             </div>
             <div className="limit-card-footer">
