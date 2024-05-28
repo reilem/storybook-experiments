@@ -6,7 +6,7 @@ import { Text } from '../Text/Text';
 import './CurvedProgress.css';
 
 type OwnProps = {
-    progress?: number; // From 0 to 100
+    value?: number; // From 0 to 100
 };
 
 type Props = React.HtmlHTMLAttributes<HTMLDivElement> & OwnProps;
@@ -14,11 +14,11 @@ type Props = React.HtmlHTMLAttributes<HTMLDivElement> & OwnProps;
 /**
  * Primary UI component for user interaction
  */
-export const CurvedProgress = ({ progress = 0, className, ...other }: Props) => {
-    const progressStr = `${progress}%`;
+export const CurvedProgress = ({ value = 0, className, ...other }: Props) => {
     // 0 -> -45
     // 100 -> 135
-    const progressRotation = `${progress * 1.8 - 45}deg`;
+    const progressRotation = `${value * 180 - 45}deg`;
+    const progressStr = `${(value * 100).toFixed(0)}%`;
 
     return (
         <div

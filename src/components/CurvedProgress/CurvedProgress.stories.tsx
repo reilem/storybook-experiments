@@ -6,12 +6,12 @@ export default {
     parameters: { layout: 'centered' },
     tags: ['autodocs'],
     argTypes: {
-        progress: { control: 'range', min: 0.0, max: 100.0, step: 1 },
+        value: { control: { type: 'range', min: 0.0, max: 1.0, step: 0.01 } },
     },
 };
 
 export const Default = {
     args: {
-        progress: 45,
+        value: 0.45,
     },
 };
